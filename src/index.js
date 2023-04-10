@@ -1,10 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
+import Header from "./components/header.js";
+
 const App = () => (
   <>
-    <h1 className="Logo">AdCupy</h1>
-    <h2>it will success</h2>
+    <Header />
   </>
 );
 
