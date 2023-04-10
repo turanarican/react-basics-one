@@ -1,14 +1,14 @@
-const Header = () => {
-  function getFullYear() {
-    return new Date().getFullYear();
-  }
-  return (
-    <>
+import React, { Component } from "react";
+
+class Header extends Component {
+  render() {
+    return (
       <div>
-        <h1>the date is {getFullYear()}</h1>
+        <h1>Logo</h1>
+        <input />
       </div>
-    </>
-  );
-};
+    );
+  }
+}
 
 export default Header;
