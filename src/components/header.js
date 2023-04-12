@@ -23,7 +23,7 @@ class Header extends Component {
           <h2>{this.state.text}</h2>
           <br />
           <h3>{this.state.count}</h3>
-          <button onClick={this.addToCounter}>Add</button>
+          <button onClick={() => this.addToCounter()}>Add</button>
         </header>
       </>
     );
