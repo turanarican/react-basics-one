@@ -10,7 +10,7 @@ class Header extends Component {
     this.setState({ text: e.target.value });
   }
   addToCounter() {
-    this.setState((state) => ({ count: this.count + 1 }));
+    this.setState((state, props) => ({ count: state.count + 1 }));
   }
   render() {
     return (
@@ -22,7 +22,7 @@ class Header extends Component {
           <input onChange={(e) => this.changeText(e)} />
           <h2>{this.state.text}</h2>
           <br />
-          <h3>this.state.count</h3>
+          <h3>{this.state.count}</h3>
           <button onClick={this.addToCounter}>Add</button>
         </header>
       </>
