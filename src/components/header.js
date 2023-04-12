@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 
-const getInputValue = (e) => {
-  console.log(e.target.value);
-};
-
 class Header extends Component {
+  getInputValue = (e) => {
+    console.log(e.target.value);
+  };
   render() {
     return (
       <>
@@ -12,7 +11,7 @@ class Header extends Component {
           <h1 className="logo" onClick={() => console.log("logo clicked")}>
             Logo
           </h1>
-          <input onChange={getInputValue} />
+          <input onChange={this.getInputValue} />
         </header>
       </>
     );
