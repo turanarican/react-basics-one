@@ -10,7 +10,7 @@ class Header extends Component {
     this.setState({ text: e.target.value });
   }
   addToCounter() {
-    this.setState((state) => ({}));
+    this.setState((state) => ({ count: this.count + 1 }));
   }
   render() {
     return (
