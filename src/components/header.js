@@ -11,7 +11,7 @@ class Header extends Component {
           <h1 className="logo" onClick={() => console.log("logo clicked")}>
             Logo
           </h1>
-          <input onChange={this.getInputValue} />
+          <input onChange={(e) => this.getInputValue(e)} />
         </header>
       </>
     );
